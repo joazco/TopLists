@@ -1,0 +1,57 @@
+body.dark {
+  background-color: var(--ion-background-color);
+  ion-header {
+    ion-toolbar {
+      --background: var(--ion-color-tertiary);
+    }
+  }
+  .form-content {
+    label {
+      color: var(--ion-color-primary);
+    }
+  }
+
+  input {
+    background-color: var(--ion-background-color);
+    color: var(--ion-color-primary);
+    &:focus,
+    &:active,
+    &:hover {
+      color: var(--ion-color-primary);
+    }
+  }
+
+  #pageListsTop {
+    h1 {
+      color: var(--ion-color-primary);
+    }
+  }
+  .list-content-card {
+    h4 {
+      color: var(--ion-color-tertiary);
+    }
+  }
+  .list-top-view {
+    h1,
+    p {
+      color: var(--ion-color-primary);
+    }
+    .list-top-item {
+      box-shadow: none;
+      h2 {
+        color: var(--ion-color-primary);
+      }
+    }
+  }
+  .top-form-row {
+    box-shadow: none;
+  }
+  .form-field-radio {
+    label.choice2-label {
+      color: var(--ion-color-tertiary-tint);
+      &.active {
+        color: white;
+      }
+    }
+  }
+}

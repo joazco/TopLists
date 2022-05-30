@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+:root {
+  --ion-color-primary: #bfb9ac;
+  --ion-color-primary-rgb: 191, 185, 172;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 0, 0, 0;
+  --ion-color-primary-shade: #a8a397;
+  --ion-color-primary-tint: #c5c0b4;
+
+  --ion-color-secondary: #f7f1e3;
+  --ion-color-secondary-rgb: 247, 241, 227;
+  --ion-color-secondary-contrast: #000000;
+  --ion-color-secondary-contrast-rgb: 0, 0, 0;
+  --ion-color-secondary-shade: #d9d4c8;
+  --ion-color-secondary-tint: #f8f2e6;
+
+  --ion-color-tertiary: #4c4637;
+  --ion-color-tertiary-rgb: 76, 70, 55;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+  --ion-color-tertiary-shade: #433e30;
+  --ion-color-tertiary-tint: #5e594b;
+
+  --ion-color-success: #7fd1ae;
+  --ion-color-success-rgb: 127, 209, 174;
+  --ion-color-success-contrast: #000000;
+  --ion-color-success-contrast-rgb: 0, 0, 0;
+  --ion-color-success-shade: #70b899;
+  --ion-color-success-tint: #8cd6b6;
+
+  --ion-color-warning: #fa9053;
+  --ion-color-warning-rgb: 250, 144, 83;
+  --ion-color-warning-contrast: #000000;
+  --ion-color-warning-contrast-rgb: 0, 0, 0;
+  --ion-color-warning-shade: #dc7f49;
+  --ion-color-warning-tint: #fb9b64;
+
+  --ion-color-danger: #fc8c77;
+  --ion-color-danger-rgb: 252, 140, 119;
+  --ion-color-danger-contrast: #000000;
+  --ion-color-danger-contrast-rgb: 0, 0, 0;
+  --ion-color-danger-shade: #de7b69;
+  --ion-color-danger-tint: #fc9885;
+
+  --ion-color-dark: #4c4637;
+  --ion-color-dark-rgb: 76, 70, 55;
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 255, 255, 255;
+  --ion-color-dark-shade: #433e30;
+  --ion-color-dark-tint: #5e594b;
+
+  --ion-color-medium: #8e897c;
+  --ion-color-medium-rgb: 142, 137, 124;
+  --ion-color-medium-contrast: #000000;
+  --ion-color-medium-contrast-rgb: 0, 0, 0;
+  --ion-color-medium-shade: #7d796d;
+  --ion-color-medium-tint: #999589;
+
+  --ion-color-light: #f7f1e3;
+  --ion-color-light-rgb: 247, 241, 227;
+  --ion-color-light-contrast: #000000;
+  --ion-color-light-contrast-rgb: 0, 0, 0;
+  --ion-color-light-shade: #d9d4c8;
+  --ion-color-light-tint: #f8f2e6;
+}
+body {
+  font: 62.5%/1.5 "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
+  background: url(/images/wallpaper.png) repeat;
+  background: var(--ion-color-secondary);
+  color: var(--ion-color-dark);
+}
+
+header {
+  background-color: var(--ion-color-primary);
+}
+header h1 {
+  display: inline;
+}
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+}
+header img {
+  width: 42px;
+}
+header span {
+  font-size: 1.3rem;
+  margin-left: 10px;
+}
+main {
+  padding: 30px;
+}
+.article {
+  display: flex;
+}
+.article article {
+  flex-basis: 75%;
+  margin-right: 2.5%;
+}
+.article article,
+.article aside {
+  flex-grow: 1;
+}
+.article aside {
+  align-self: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.article article h1,
+.article aside h1,
+.article-jaozco h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.article article p,
+.article-jaozco p {
+  line-height: 2rem;
+  font-size: 1.1rem;
+}
+.article aside div {
+  margin-bottom: 10px;
+}
+
+.article-jaozco {
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 769px) {
+  .article {
+    flex-direction: column;
+  }
+  .article aside {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}

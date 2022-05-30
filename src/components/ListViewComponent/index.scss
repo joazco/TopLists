@@ -1,0 +1,43 @@
+.list-top-view {
+  h1 {
+    text-transform: capitalize;
+  }
+  .list-top-view-author {
+    text-transform: capitalize;
+  }
+}
+.list-top-view-header-title {
+  text-transform: capitalize;
+}
+.list-top-item {
+  margin-bottom: 20px;
+  border: 1px solid var(--ion-color-primary);
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(191, 185, 172, 0.88);
+  box-shadow: 0px 0px 10px 3px rgba(191, 185, 172, 0.88);
+  font-style: italic;
+  font-weight: bold;
+  color: var(--ion-color-dark-tint);
+  display: flex;
+  flex-direction: column;
+
+  .list-top-item-img-content {
+    // align-self: center;
+    img {
+      border-radius: 10px 10px 0px 0px;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  .list-top-item-header-content {
+    padding: 20px 20px 0 20px;
+  }
+  .list-top-item-header-description {
+    font-size: 0.9rem;
+    padding: 0 20px;
+    p {
+      margin: 0 0 10px 10px;
+    }
+  }
+}

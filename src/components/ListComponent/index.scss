@@ -1,0 +1,76 @@
+.list-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  border-radius: 10px;
+  > div {
+    margin: 5px 0;
+    padding: 5px 10px 5px 5px;
+    border-radius: 10px;
+    background-color: var(--ion-color-secondary);
+    &:nth-child(even) {
+      background-color: white;
+      border: 1px solid var(--ion-color-light);
+    }
+  }
+  .list-content-card {
+    display: flex;
+    padding: 10px;
+    > div {
+      &:nth-child(1) {
+        flex-basis: 10%;
+        margin-right: 2%;
+      }
+      &:nth-child(2) {
+        flex-basis: 78%;
+      }
+      &:nth-child(3) {
+        flex-basis: 10%;
+      }
+    }
+    div.list-content-card-img {
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      align-self: center;
+    }
+    div.list-content-card-icon-title {
+      h4 {
+        margin: 0;
+        font-size: 1.1rem;
+        text-transform: capitalize;
+        ion-icon {
+          margin-left: 10px;
+        }
+      }
+      .list-content-card-icon-title-description {
+        font-size: 0.8rem;
+        margin-left: 5px;
+        height: 18px;
+        width: 140px;
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        margin: 0 5px 0 5px;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+    div.list-content-card-icon-forward {
+      span {
+        float: right;
+      }
+      align-self: center;
+    }
+    div.list-content-card-icon-title-author {
+      font-size: 0.7rem;
+      color: var(--ion-color-primary-shade);
+      margin-left: 10px;
+      text-transform: capitalize;
+    }
+  }
+}

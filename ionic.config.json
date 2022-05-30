@@ -1,0 +1,7 @@
+{
+  "name": "TopLists",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

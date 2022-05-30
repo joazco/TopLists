@@ -1,0 +1,12 @@
+#max-lists-created-page {
+  --padding-start: 20px;
+  --padding-end: 20px;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}

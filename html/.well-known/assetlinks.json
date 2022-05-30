@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.joazco.toplists",
+      "sha256_cert_fingerprints": [
+        "FF:D4:94:81:E2:1D:93:37:C1:B3:10:3C:69:FA:70:80:BE:F0:EE:9D:E2:80:C5:22:B2:14:55:11:00:70:E9:E8"
+      ]
+    }
+  }
+]

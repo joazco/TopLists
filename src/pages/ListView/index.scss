@@ -1,0 +1,17 @@
+#pageListsTop {
+  ion-searchbar {
+    --box-shadow: none;
+    --border-radius: 10px;
+    input {
+      border: 1px solid var(--ion-color-primary);
+    }
+  }
+}
+.header-toolbar-title-home {
+  img {
+    width: 50px;
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+  }
+}
